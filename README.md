@@ -26,8 +26,7 @@ python3 -m http.server 8080
 ```
 then open http://localhost:8080.
 
-## Deploy (Cloudflare Pages)
-Connect this repository in Cloudflare Pages with:
-- Framework preset: None
-- Build command: (empty)
-- Build output directory: `/`
+## Deploy (Cloudflare)
+**Workers** (uses `wrangler.jsonc`): connect the repository, leave the build command empty, deploy command `npx wrangler deploy`.
+
+**Pages**: framework preset None, build command empty, build output directory `/`.
